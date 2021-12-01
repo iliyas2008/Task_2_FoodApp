@@ -1,0 +1,328 @@
+/* RESET START */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: 'Roboto';
+   }
+   a {
+    text-decoration: none;
+   }
+/* RESET END */
+
+/* NAVBAR STYLE STARTS */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+    background-color: teal;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    z-index: 9999;
+}
+.nav-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    list-style: none;
+}
+.nav-link a{
+    color: white;
+    padding: .5rem;
+}
+.nav-link a:hover{
+    background-color: darkred;
+    padding: .5rem;
+    border-radius: .2rem;
+}
+/* NAVBAR STYLE END */
+section{
+    padding: 2vw 2em;
+}
+#sect_home{
+    margin: 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    border: 1px solid orangered;
+    border-radius: .30rem;
+    box-shadow: 10px 10px 5px #fce3e3;
+ }
+.intro{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    
+}
+.intro .intro-text{
+    width: 70%;
+}
+.intro ol{
+    padding: .5rem 2rem;
+}
+.intro-img img{
+    width: 300px;
+    height: 300px;
+}
+section h1{
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: darkred;
+    margin-bottom: 1rem;
+}
+.intro p{
+    margin: .5rem;
+}
+.intro-btnorder{
+    margin: auto;
+    display: flex;
+    border: none;
+    padding: .8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: teal;
+    color: #fff;
+    border-radius: .6rem;
+    box-shadow: 0px 0px 10px 8px rgba(255, 0, 20, .4);
+    
+}
+.intro-btnorder:hover{
+    background-color: darkred;
+}
+.intro table, tr, td{
+    border-collapse: collapse;
+    padding: .8rem 1.5rem;
+    border: 1px solid orangered;
+    text-align: center;
+}
+
+.intro td{
+    width: 6rem;
+}
+.intro td:hover{
+    background-color: #aaaaaa;
+    color: orangered;
+}
+
+#sect_speciality{
+    display: flex;
+    flex-direction: column;
+}
+.special-cards, .gallery-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.card img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    position: relative;
+    width: 18rem;
+    height: 14rem;
+    padding: 0.2rem;
+    border: 1px solid orangered;
+    border-radius: .30rem;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    text-align: center;
+}
+.video video{
+    object-fit: cover;
+    width: 18rem;
+    height: 14rem;
+    border-radius: .30rem;
+}
+.card .text, .card .video{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: darkred;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+#sect_speciality p{
+    margin: .2em;
+}
+.special-cards .card:hover .text{
+    visibility: visible;
+    opacity: 1;
+}
+.gallery-cards .card:hover .video{
+    visibility: visible;
+    opacity: 1;
+}
+
+.review-cards{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.review-card{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    width: 18rem;
+    height: 20rem;
+    padding: 1rem;
+    color: blue;
+    border: 1px solid orangered;
+    border-radius: .30rem;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    
+}
+.review-card audio{
+    width: 16rem;
+}
+.review-card img{
+    margin-top: -2.5rem;
+    width: 4rem;
+    height: 4rem;
+    max-width: 100%;
+    border-radius: 50%;
+    background-color: blue;
+    padding: 2px;
+    border: 3px solid orangered;
+}
+.checked{
+    color: orangered;
+}
+.order-form{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.order-form input:not([type=checkbox]){
+    margin: auto;
+    width: 15rem;
+    padding: 1rem;
+    border: 1px solid orangered;
+    border-radius: .30rem;
+}
+input:focus:not([type=checkbox]) {
+    outline: none;
+    border:1px solid teal;
+}
+#specialoption, select, option {
+    margin: auto;
+    width: 15rem;
+    padding: 1rem;
+    background-color: teal;
+    color: white;
+    font-weight: 600;
+    border: 1px solid orangered;
+    border-radius: .30rem;
+}
+#specialoption option:checked {
+    background-color: darkred;
+}
+textarea{
+    padding: 1rem;
+    border: 1px solid orangered;
+    border-radius: .30rem;
+}
+textarea:focus{
+    outline: none;
+    border: 1px solid teal;
+}
+.btns{
+    margin: 2rem auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.btnorder, .btnreset{
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: teal;
+    color: #fff;
+    border-radius: .6rem;
+    box-shadow: 0px 0px 10px 8px rgba(255, 0, 20, .4);
+}
+.btnorder:hover, .btnreset:hover{
+    background-color: darkred;
+    border-radius: .6rem;
+}
+#sect_about p{
+    padding: .8rem;
+}
+.about{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about article{
+    width: 20rem;
+    flex-grow: 1;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: teal;
+    padding: 1rem;
+}
+.boxes{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.box2, .box3, .box4{
+    margin: auto;
+    width: 20rem;
+    flex-grow: 1;
+}
+.box4 iframe{
+    margin: 1rem 0;
+    border-radius: .3rem;
+    height: 90%;
+}
+.box1 p,.box2 a{
+    display: block;
+    margin: 1rem;
+    padding: .8rem;
+    font-size: 1.2rem;
+    background-color: rgba(30, 0, 20, .4);
+    color: white;
+    border-radius: .3rem;
+}
+.box3 p{
+    height: 90%;
+    padding: .8rem;
+    font-size: 1.2rem;
+    background-color: rgba(30, 0, 20, .4);
+    margin-top: 1rem;
+    color: white;
+    border-radius: .3rem;
+}
+.box1 p:hover, .box2 a:hover, .box3 p:hover{
+    background-color: darkred;
+    color: white;
+}
+.copyright{
+    text-align: center;
+    color: darkred;
+}
